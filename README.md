@@ -49,5 +49,5 @@ python3 ical_generator.py
 [SunsetYe66/ClasstableToIcal](https://github.com/SunsetYe66/ClasstableToIcal) 
 
 ## License
-
+ 
 LGPLv3
