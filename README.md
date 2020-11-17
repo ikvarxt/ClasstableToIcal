@@ -3,7 +3,7 @@
 
 ## Usage
 
-教程请访问 
+教程请访问 [ikvarxt/ClasstableToIcal](https://github.com/ikvarxt/ClasstableToIcal) 。 
 
 > 原项目详细教程请参看[少数派](https://sspai.com/post/59694)。
 
