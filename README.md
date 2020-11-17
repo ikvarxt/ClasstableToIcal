@@ -1,37 +1,35 @@
 # ClasstableToIcal
-Convert Classtable to iCal using Pything and Excel as data source.
-
-该工具可以方便地将课程表转换为 `.ics` 格式以导入各种设备的「日程」中。
+项目基于 [SunsetYe66/ClasstableToIcal](https://github.com/SunsetYe66/ClasstableToIcal) ，增加从 [LNTU-API](https://github.com/LiaoGuoYin/LNTU-API) 获取到辽宁工程技术大学课程表数据。
 
 ## Usage
 
-以下为简略说明，更详细教程请参看[少数派](https://sspai.com/post/59694)。
+教程请访问 
+
+> 原项目详细教程请参看[少数派](https://sspai.com/post/59694)。
 
 先安装依赖：
 
 ```shell
-pip install uuid xlrd 
+pip3 install uuid xlrd requests
 ```
 
-然后执行 `main.py`：
-
+然后执行 `getClassData.py` ：
 ```shell
-python main.py
-# or
-python3 main.py
+python3 getClassDate.py
 ```
 
-测试环境为：Python 3.7.2，Windows 10 x64.
+根据提示输入教务在线账号、密码。如果出现报错，可试着**再运行一次**，可能就会好。建议**晚上 11 点前运行**脚本，大佬的 API 服务器晚上好像会关机。
+
+然后执行 `ical_generator.py` :
+```shell
+python3 ical_generator.py
+```
+生成 ics 文件即为日程时间安排文件。
+
+测试环境：Python 3.8.5，macOS 10.15.7。
 
 ## 文件中格式解释
 
-### temp_classInfo.xlsx
-
-课程的名称、起始周数等在文件里已标示清楚，weekStatus 是单双周标记。
-
-> 0=不分单双周，1=单周，2=双周
-
-是否显示教师、是否开启单双周功能可在 `excel_reader.py` 中更改。
 
 ### conf_classTime.json
 
@@ -45,13 +43,9 @@ python3 main.py
 
 该文件为 JSON 格式，一开始的数字是**时段编号**，对应 `temp_classinfo.xlsx` 里的 `classTime` 字段；`startTime` 与 `endTime` 采用 `%H%M%S` 格式，即时、分、秒去掉分隔符。
 
-## Feature
+## Credits
 
-现在支持：
-
-- 单双周排课
-- 课前n分钟提醒（待进一步测试）
-- 不同教室（添加多个条目）
+[SunsetYe66/ClasstableToIcal](https://github.com/SunsetYe66/ClasstableToIcal) 
 
 ## License
 

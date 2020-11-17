@@ -1,28 +1,28 @@
 {
     "1": {
-        "name": "第 1、2 节",
-        "startTime": "082000",
-        "endTime": "095500"
+        "name": "第一大节",
+        "startTime": "080000",
+        "endTime": "093500"
     },
     "2": {
-        "name": "第 3、4 节",
-        "startTime": "101500",
-        "endTime": "115000"
+        "name": "第二大节",
+        "startTime": "095500",
+        "endTime": "113000"
     },
     "3": {
-        "name": "第 5、6 节",
-        "startTime": "130000",
-        "endTime": "143500"
+        "name": "第三大节",
+        "startTime": "133000",
+        "endTime": "150500"
     },
     "4": {
-        "name": "第 7、8 节",
-        "startTime": "145500",
-        "endTime": "163000"
+        "name": "第四大节",
+        "startTime": "152500",
+        "endTime": "170000"
     },
     "5": {
-        "name": "第 9、10 节",
-        "startTime": "180000",
-        "endTime": "193500"
+        "name": "第五大节",
+        "startTime": "183000",
+        "endTime": "200500"
     },
     "6": {
         "name": "第 9、10、11 节",
