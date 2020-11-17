@@ -28,20 +28,21 @@ python3 ical_generator.py
 
 测试环境：Python 3.8.5，macOS 10.15.7。
 
-## 文件中格式解释
+## 一些设置
 
+### 课程开始结束时间
 
-### conf_classTime.json
+在 conf_ClassTime.json 中，修改 `startTime`、`endTime` 字段即可。
 
 ```json
 "1": {
-    "name": "第 1、2 节", 
-    "startTime": "082000",
-    "endTime": "095500"
+    "name": "第一大节", 
+    "startTime": "080000",
+    "endTime": "093500"
 }
 ```
 
-该文件为 JSON 格式，一开始的数字是**时段编号**，对应 `temp_classinfo.xlsx` 里的 `classTime` 字段；`startTime` 与 `endTime` 采用 `%H%M%S` 格式，即时、分、秒去掉分隔符。
+`startTime` 与 `endTime` 采用 `%H%M%S` 格式。
 
 ## Credits
 
