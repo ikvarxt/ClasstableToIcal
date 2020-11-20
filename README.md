@@ -3,7 +3,7 @@
 
 ## Usage
 
-教程请访问 [](https://ikvarxt.github.io/posts/90a3/) 。 
+教程请访问 [https://ikvarxt.github.io/posts/90a3/](https://ikvarxt.github.io/posts/90a3/) 。 
 
 > 原项目详细教程请参看[少数派](https://sspai.com/post/59694)。
 
