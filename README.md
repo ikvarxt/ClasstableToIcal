@@ -18,7 +18,7 @@ pip3 install uuid xlrd requests
 python3 getClassDate.py
 ```
 
-根据提示输入教务在线账号、密码。如果出现报错，可试着**再运行一次**，可能就会好。建议**晚上 11 点前运行**脚本，大佬的 API 服务器晚上好像会关机。
+根据提示输入教务在线账号、密码。如果出现报错，可试着**再运行一次**，可能就会好。
 
 然后执行 `ical_generator.py` :
 ```shell
